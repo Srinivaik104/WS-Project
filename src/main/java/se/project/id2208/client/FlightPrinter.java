@@ -48,8 +48,8 @@ class FlightPrinter {
     this.flightAgent = flightAgent;
 
     System.out.println("Finding all possible flights to destination");
-    System.out.println("From:\t" + from);
-    System.out.println("To:\t\t" + to);
+    System.out.println("Departure:\t" + from);
+    System.out.println("Destination:\t\t" + to);
 
     for (List<QuerySolution> itinerary : itineraries) {
       printItinerary(itinerary, from);

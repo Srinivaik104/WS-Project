@@ -116,7 +116,7 @@ public class FlightAgent extends AgentUtil {
   }
 
   /**
-   * Uses BFS search to find the closest itineraries.
+   * Uses search to find the closest itineraries.
    *
    * @param fromAirport The URI airport to start the search from.
    * @param toAirport The URI airport to end the search on.
