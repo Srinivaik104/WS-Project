@@ -1,0 +1,10 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:smp="http://localhost:8080/id2208/project/ontology/flights#"
+    xmlns:j.0="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#">
+  <smp:Airport rdf:about="http://localhost:8080/id2208/project/rdf/airport/blr">
+    <smp:hasFlights rdf:resource="http://localhost:8080/id2208/project/rdf/airport/blr/flights"/>
+    <j.0:hasLocation rdf:resource="http://dbpedia.org/resource/Bengaluru"/>
+    <smp:hasName>blr</smp:hasName>
+  </smp:Airport>
+</rdf:RDF>

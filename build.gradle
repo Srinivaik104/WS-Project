@@ -1,0 +1,35 @@
+buildscript {
+	ext {
+		springBootVersion = '1.5.10.RELEASE'
+	}
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+	}
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+
+group = 'se.project.id2208.server'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 1.8
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	compile('org.springframework.boot:spring-boot-starter-web')
+  // https://mvnrepository.com/artifact/org.apache.jena/jena-core
+  compile group: 'org.apache.jena', name: 'jena-core', version: '3.6.0'
+	// https://mvnrepository.com/artifact/com.google.guava/guava
+	compile group: 'com.google.guava', name: 'guava', version: '19.0'
+	// https://mvnrepository.com/artifact/org.apache.jena/jena-arq
+	compile group: 'org.apache.jena', name: 'jena-arq', version: '3.6.0'
+
+	testCompile('org.springframework.boot:spring-boot-starter-test')
+}
